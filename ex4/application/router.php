@@ -1,4 +1,5 @@
 <?php
+session_start();
 function autoloader($class){
 
     if(file_exists('application/'.strtolower($class).'.php')){
@@ -17,6 +18,7 @@ function autoloader($class){
 
 }
 require_once('application/config.php');
+require_once('libraries/password.php');
 spl_autoload_register('autoloader');
 //grab the path info and break it apart into separate variables
 $paths = explode('/', $_SERVER['PATH_INFO']);
