@@ -1,14 +1,22 @@
-<?php require_once ('application/config.php');
-include('elements/header.php');?>
+<?php
+require_once ('application/config.php');
+include('elements/header.php')
+;?>
+    <div class="container">
+        <div class="page-header">
+            <h1>Login</h1>
 
-<div class="container">
-	<div class="page-header">
-   <h1> the Login View </h1>
-   <?php echo $numbers ?>
+            <?php if(isset($error)) { ?>
+                <div class="alert alert-danger">
+                    <?php echo $error;?>
+                </div>
 
-   <?php include('elements/login_form.php');?>
+                <?php
+            }
+            ?>
 
-  </div>
-</div>
+            <?php include('elements/login_form.php');?>
+
+        </div>
+    </div>
 <?php include('elements/footer.php');?>
-
