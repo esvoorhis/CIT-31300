@@ -2,6 +2,7 @@
 class AddPostController extends Controller{
 
     public $postObject;
+    protected $access = "1";
 
     public function defaultTask(){
         $this->postObject = new Post();
@@ -48,4 +49,5 @@ class AddPostController extends Controller{
         $this->getCategories();
         $this->set('task', 'update');
     }
+
 }

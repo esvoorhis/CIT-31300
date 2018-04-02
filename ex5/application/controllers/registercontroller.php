@@ -9,7 +9,7 @@ class RegisterController extends Controller{
 
     public function add(){
         $this->userObject = new Users();
-        $password = $_POST['password'];
+        $password = pasword_hash($_POST['password']);
         $passhash = password_hash($password,PASSWORD_DEFAULT);
         $data = array('first_name'=>$_POST['first_name'],'last_name'=>$_POST['last_name'],'email'=>$_POST['email'],'password'=>$passhash);
 
