@@ -10,7 +10,38 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/config.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="28" lean-forward="false" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="router.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/router.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="503">
+              <caret line="34" column="14" lean-forward="false" selection-start-line="34" selection-start-column="14" selection-end-line="34" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -36,7 +67,6 @@
         <option value="$PROJECT_DIR$/application/models/categories.php" />
         <option value="$PROJECT_DIR$/views/elements/registration_form.php" />
         <option value="$PROJECT_DIR$/application/libraries/password.php" />
-        <option value="$PROJECT_DIR$/application/config.php" />
         <option value="$PROJECT_DIR$/application/controllers/addpostcontroller.php" />
         <option value="$PROJECT_DIR$/application/controllers/blogcontroller.php" />
         <option value="$PROJECT_DIR$/views/login.php" />
@@ -45,14 +75,15 @@
         <option value="$PROJECT_DIR$/application/controllers/controller.php" />
         <option value="$PROJECT_DIR$/application/controllers/registercontroller.php" />
         <option value="$PROJECT_DIR$/application/models/users.php" />
-        <option value="$PROJECT_DIR$/application/router.php" />
         <option value="$PROJECT_DIR$/application/controllers/logincontroller.php" />
         <option value="$PROJECT_DIR$/views/elements/login_form.php" />
         <option value="$PROJECT_DIR$/application/load.php" />
         <option value="$PROJECT_DIR$/views/home.php" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/views/elements/header.php" />
         <option value="$PROJECT_DIR$/views/elements/footer.php" />
+        <option value="$PROJECT_DIR$/application/router.php" />
+        <option value="$PROJECT_DIR$/application/config.php" />
+        <option value="$PROJECT_DIR$/index.php" />
       </list>
     </option>
   </component>
@@ -167,15 +198,16 @@
       <workItem from="1522014748747" duration="1881000" />
       <workItem from="1522518873075" duration="11819000" />
       <workItem from="1522632450180" duration="629000" />
-      <workItem from="1522633085052" duration="4000" />
+      <workItem from="1522633085052" duration="1864000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29394000" />
+    <option name="totallyTimeSpent" value="31254000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="697" y="14" width="885" height="867" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18642117" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -226,6 +258,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -338,20 +371,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/login.php" />
     <entry file="file://$PROJECT_DIR$/views/elements/login_form.php" />
-    <entry file="file://$PROJECT_DIR$/application/router.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="62" lean-forward="true" selection-start-line="4" selection-start-column="62" selection-end-line="4" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/home.php" />
     <entry file="file://$PROJECT_DIR$/application/controllers/logincontroller.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -385,13 +404,30 @@
     <entry file="file://$PROJECT_DIR$/views/elements/admin_header.php" />
     <entry file="file://$PROJECT_DIR$/views/elements/header.php" />
     <entry file="file://$PROJECT_DIR$/views/addpost.php" />
+    <entry file="file://$PROJECT_DIR$/views/elements/footer.php" />
+    <entry file="file://$PROJECT_DIR$/application/router.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="503">
+          <caret line="34" column="14" lean-forward="false" selection-start-line="34" selection-start-column="14" selection-end-line="34" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="28" lean-forward="false" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/elements/footer.php" />
   </component>
 </project>
