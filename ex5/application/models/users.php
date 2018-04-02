@@ -40,7 +40,6 @@ class Users extends Model{
             return false;
         }
     }
-
     public function getUser($uID){
         $sql = 'SELECT uID, first_name, last_name, email, password FROM users WHERE uID = ?';
 
@@ -49,7 +48,6 @@ class Users extends Model{
         $user = $results;
         return $user;
     }
-
     public function getAllUsers($limit = 0){
         if($limit > 0){
             $numusers = ' LIMIT '.$limit;
@@ -64,7 +62,6 @@ class Users extends Model{
         }
         return $users;
     }
-
     public function addUser($data){
         $sql = 'INSERT INTO users (first_name, last_name, email, password) VALUES (?,?,?,?)';
         $this->db->execute($sql,$data);
