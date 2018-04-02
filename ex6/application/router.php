@@ -32,7 +32,7 @@ for($i=3;$i < count($paths);$i++){
     $parameters[] = $paths[$i];
 }
 //uppercase the first variable name and append Controller to it. If none, the default controller will load
-$controller =  $view.'Controller';
+$controller = ucfirst($paths[1]).'Controller';
 //instantiate our controller and pass in parameters
 if (class_exists($controller)) {
     new $controller($view, $method, $parameters);
