@@ -1,10 +1,10 @@
 <?php
 class Controller {
-    public $view;
+    public $load;
     public $data = array();
     protected $access;
     function __construct($view, $method = null, $parameters = null){
-        $this->view = new View();
+        $this->load = new Load();
         new Model();
         $u = new Users();
         if($this->access == 1 && !$u->isAdmin()) {
@@ -15,16 +15,9 @@ class Controller {
             if($method){
                 $this->runTask($method, $parameters);
             }else{
-                $this->index();
-                $method = 'index';
+                $this->defaultTask();
             }
-            //render
-            if(file_exists('views/'.strtolower($view).'/'.strtolower($method).'php')){
-                $this->view->load($view, $method,$this->data);
-            }
-            else{
-                $this->view->load($view, 'index',$this->data);
-            }
+            $this->load->view($view.'.php', $this->data);
         }
     }
     public function runTask($method, $parameters = null){
