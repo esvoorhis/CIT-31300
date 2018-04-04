@@ -1,7 +1,6 @@
 <?php
 session_start();
 function autoloader($class){
-
     if(file_exists('application/'.strtolower($class).'.php')){
         //first check the application directory
         include_once('application/'.strtolower($class).'.php');
@@ -12,10 +11,7 @@ function autoloader($class){
     }elseif(file_exists('application/models/'.strtolower($class).'.php')){
         //finally check the models directory
         include_once('application/models/'.strtolower($class).'.php');
-
     }
-
-
 }
 require_once('application/config.php');
 spl_autoload_register('autoloader');
