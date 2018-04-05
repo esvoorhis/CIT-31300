@@ -1,6 +1,6 @@
 <?php
 class Controller {
-    public $view;
+    public $load;
     public $data = array();
     protected $access;
     function __construct($view, $method = null, $parameters = null){
@@ -19,11 +19,11 @@ class Controller {
                 $method = 'index';
             }
             //render
-            if(file_exists('views/'.strtolower($view).'/'.strtolower($method).'php')){
-                $this->view->load($view, $method,$this->data);
+            if(file_exists('views/'.strtolower($view).'/'.strtolower($method).'.php')) {
+                $this->view->load($view,$method,$this->data);
             }
-            else{
-                $this->view->load($view, 'index',$this->data);
+            else {
+                $this->view->load($view,'index',$this->data);
             }
         }
     }
