@@ -6,11 +6,13 @@
  * @license http://www.opensource.org/licenses/mit-license.html MIT License
  * @copyright 2012 The Authors
  */
+
 namespace {
+
     if (!defined('PASSWORD_BCRYPT')) {
         /**
          * PHPUnit Process isolation caches constants, but not function declarations.
-         * So we need to check if the constants are defined separately from
+         * So we need to check if the constants are defined separately from 
          * the functions to enable supporting process isolation in userland
          * code.
          */
@@ -18,7 +20,9 @@ namespace {
         define('PASSWORD_DEFAULT', PASSWORD_BCRYPT);
         define('PASSWORD_BCRYPT_DEFAULT_COST', 10);
     }
+
     if (!function_exists('password_hash')) {
+
         /**
          * Hash the password using the specified algorithm
          *
@@ -140,17 +144,23 @@ namespace {
                     'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/';
                 $bcrypt64_digits =
                     './ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+
                 $base64_string = base64_encode($salt);
                 $salt = strtr(rtrim($base64_string, '='), $base64_digits, $bcrypt64_digits);
             }
             $salt = PasswordCompat\binary\_substr($salt, 0, $required_salt_len);
+
             $hash = $hash_format . $salt;
+
             $ret = crypt($password, $hash);
+
             if (!is_string($ret) || PasswordCompat\binary\_strlen($ret) != $resultLength) {
                 return false;
             }
+
             return $ret;
         }
+
         /**
          * Get information about the password hash. Returns an array of the information
          * that was used to generate the password hash.
@@ -181,6 +191,7 @@ namespace {
             }
             return $return;
         }
+
         /**
          * Determine if the password hash needs to be rehashed according to the options provided
          *
@@ -207,6 +218,7 @@ namespace {
             }
             return false;
         }
+
         /**
          * Verify a password against a hash using a timing attack resistant approach
          *
@@ -224,16 +236,22 @@ namespace {
             if (!is_string($ret) || PasswordCompat\binary\_strlen($ret) != PasswordCompat\binary\_strlen($hash) || PasswordCompat\binary\_strlen($ret) <= 13) {
                 return false;
             }
+
             $status = 0;
             for ($i = 0; $i < PasswordCompat\binary\_strlen($ret); $i++) {
                 $status |= (ord($ret[$i]) ^ ord($hash[$i]));
             }
+
             return $status === 0;
         }
     }
+
 }
+
 namespace PasswordCompat\binary {
+
     if (!function_exists('PasswordCompat\\binary\\_strlen')) {
+
         /**
          * Count the number of bytes in a string
          *
@@ -252,6 +270,7 @@ namespace PasswordCompat\binary {
             }
             return strlen($binary_string);
         }
+
         /**
          * Get a substring based on byte limits
          *
@@ -270,6 +289,7 @@ namespace PasswordCompat\binary {
             }
             return substr($binary_string, $start, $length);
         }
+
         /**
          * Check if current PHP version is compatible with the library
          *
@@ -277,6 +297,7 @@ namespace PasswordCompat\binary {
          */
         function check() {
             static $pass = NULL;
+
             if (is_null($pass)) {
                 if (function_exists('crypt')) {
                     $hash = '$2y$04$usesomesillystringfore7hnbRJHxXVLeakoG8K30oukPsA.ztMG';
@@ -288,5 +309,6 @@ namespace PasswordCompat\binary {
             }
             return $pass;
         }
+
     }
 }
