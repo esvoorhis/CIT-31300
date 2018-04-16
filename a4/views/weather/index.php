@@ -22,7 +22,6 @@ else {
 
     </div>
 
-
     <div class="container">
         <div class="page-header">
             <h1>Weather for <?php echo $weather->request->query;?></h1>
