@@ -24,10 +24,13 @@ else {
 
     <div class="container">
         <div class="page-header">
-            <h1>Weather for <?php echo $weather->request->query;?></h1>
+            <h1>Current Weather for <?php echo $weather->current_observation->display_location->full;?></h1>
         </div>
-        <h4>Today's High: <?php echo $weather->weather->maxtempF;?></h4>
-        <h4>Today's Low: <?php echo $weather->weather->mintempF;?></h4>
+        <h4><?php echo $weather->current_observation->weather;?>&nbsp;<img scr="<?php echo $weather->current_observation->icon_url;?>" /></h4>
+        <h4>Temperature: <?php echo $weather->current_observation->tempurature_string;?></h4>
+        <h4>Wind: <?php echo $weather->current_observation->wind_string;?></h4>
+        <h4>Humidity: <?php echo $weather->current_observation->pressure_in;?>(<?php echo $weather->current_observation->pressure_trend;?>)</h4>
+
 
     </div>
     <?php
