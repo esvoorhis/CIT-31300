@@ -37,7 +37,7 @@ if($u->isAdmin()) {
 <?php   }
 ?>
 
-<script>
+<script> //jquery for button function on blog index
     $(document).ready(function() {
         $('.post-loader').click(function(event) {
             event.preventDefault();
