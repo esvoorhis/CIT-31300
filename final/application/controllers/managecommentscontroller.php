@@ -10,7 +10,6 @@ class ManageCommentsController extends Controller{
 
     public function add(){
         $this->commentObject = new Comment();
-        $this->getCategories();
         $this->set('task', 'save');
     }
 
