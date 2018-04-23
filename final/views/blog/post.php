@@ -24,11 +24,10 @@ if( is_array($post) ) {
         <p><?php echo $commentText ?></p>
 
         <?php if ($u->isRegistered()) { ?>
-            <form class="" action="<?php echo BASE_URL?>managecomments/<?php echo $task ?>" method="post">
+            <form class="" action="<?php echo BASE_URL?>managecommentscontroller/<?php echo $task ?>" method="post">
                 <input id="commentText" class="" name="commentText" type="text">
                 <button id="submit" type="submit" class="btn btn-primary">Submit</button>
             </form>
-
         <?php } ?>
 </div>
 

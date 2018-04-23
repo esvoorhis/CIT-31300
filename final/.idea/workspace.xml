@@ -11,46 +11,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.php">
+      <file leaf-file-name="post.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views/blog/post.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+            <state relative-caret-position="510">
+              <caret line="30" column="18" lean-forward="true" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="post.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/blog/post.php">
+      <file leaf-file-name="managecommentscontroller.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/controllers/managecommentscontroller.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-              <folding>
-                <element signature="n#style#0;n#div#1;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="comments.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/application/models/comments.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-              <folding>
-                <marker date="1524449142397" expanded="true" signature="79:285" ph="SELECT c.com... comments" />
-                <marker date="1524449142397" expanded="true" signature="424:494" ph="INSERT INTO comments... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="blogcontroller.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/controllers/blogcontroller.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="36" column="2" lean-forward="false" selection-start-line="36" selection-start-column="2" selection-end-line="36" selection-end-column="2" />
+            <state relative-caret-position="442">
+              <caret line="26" column="1" lean-forward="true" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -101,11 +76,11 @@
         <option value="$PROJECT_DIR$/application/controllers/managepostscontroller.php" />
         <option value="$PROJECT_DIR$/application/models/comment.php" />
         <option value="$PROJECT_DIR$/views/elements/comment_form.php" />
-        <option value="$PROJECT_DIR$/application/controllers/managecommentscontroller.php" />
         <option value="$PROJECT_DIR$/application/controllers/commentscontroller.php" />
         <option value="$PROJECT_DIR$/application/controllers/blogcontroller.php" />
-        <option value="$PROJECT_DIR$/views/blog/post.php" />
         <option value="$PROJECT_DIR$/application/models/comments.php" />
+        <option value="$PROJECT_DIR$/application/controllers/managecommentscontroller.php" />
+        <option value="$PROJECT_DIR$/views/blog/post.php" />
       </list>
     </option>
   </component>
@@ -119,7 +94,7 @@
     <servers />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="107" />
     <option name="y" value="-19" />
     <option name="width" value="1077" />
@@ -165,12 +140,6 @@
               <item name="final" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="libraries" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="final" type="b2602c69:ProjectViewProjectNode" />
-              <item name="final" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="models" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="final" type="b2602c69:ProjectViewProjectNode" />
@@ -241,15 +210,15 @@
       <workItem from="1524189957726" duration="27206000" />
       <workItem from="1524425508505" duration="495000" />
       <workItem from="1524426589311" duration="644000" />
-      <workItem from="1524427272947" duration="11476000" />
+      <workItem from="1524427272947" duration="12250000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61259000" />
+    <option name="totallyTimeSpent" value="62033000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="7" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -645,19 +614,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/managecommentscontroller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="5" lean-forward="true" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/commentscontroller.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
           <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/comments.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding>
+            <marker date="1524449142397" expanded="true" signature="79:285" ph="SELECT c.com... comments" />
+            <marker date="1524449142397" expanded="true" signature="424:494" ph="INSERT INTO comments... " />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -669,24 +641,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/blog/post.php">
+    <entry file="file://$PROJECT_DIR$/application/controllers/managecommentscontroller.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="442">
+          <caret line="26" column="1" lean-forward="true" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/comments.php">
+    <entry file="file://$PROJECT_DIR$/views/blog/post.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
-          <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding>
-            <marker date="1524449142397" expanded="true" signature="79:285" ph="SELECT c.com... comments" />
-            <marker date="1524449142397" expanded="true" signature="424:494" ph="INSERT INTO comments... " />
-          </folding>
+          <caret line="30" column="18" lean-forward="true" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>
