@@ -25,19 +25,6 @@ class ManagePostsController extends Controller{
 		$this->set('message', $result);
 	}
 	
-	public function edit($pID){
-		$this->postObject = new Post();
-		$post = $this->postObject->getPost($pID);
-		$this->getCategories();
-			
-		$this->set('pID', $post['pID']);
-		$this->set('title', $post['title']);
-		$this->set('content', $post['content']);
-		$this->set('date', $post['date']);
-		$this->set('category', $post['categoryID']);
-		$this->set('task', 'update');
-	}
-	
 	public function getCategories(){
 		$this->postObject = new Categories();
 		$categories = $this->postObject->getCategories();

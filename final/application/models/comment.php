@@ -9,9 +9,7 @@ INNER JOIN user u on user.uID = comments.uID
 WHERE post.pID = ?';
 
         $results = $this->db->getrow($sql, array($pID));
-
         $comment = $results;
-
         return $comment;
 
     }
@@ -23,6 +21,10 @@ WHERE post.pID = ?';
         $message = 'Comment Saved.';
         return $message;
 
+    }
+
+    public function delete($data){
+        $sql='delete from comments where $comments.commentID = ?';
     }
 
 }

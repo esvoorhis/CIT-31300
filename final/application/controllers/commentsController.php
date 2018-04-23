@@ -1,18 +1,24 @@
 <?php
 
-class commentsController extends Controller{
+class commentscontroller extends Controller{
 
     public $commentObject;
 
-    protected $access = "1";
-
-    public function index() {
-
+        public function comment($commentID){
+        $this->commentObject = new Comment();
+        $comment = $this->commentObject->getComment($commentID);
+        $this->set('comment',$comment);
     }
+
+
+    protected $access = "1";
 
     public function add() {
         $this->commentObject = new Comment();
         $this->set('task', 'save');
+        $commentdata = array('uID'=>$_POST['uID'],'commentText'=>$_POST['commentText'],'date'=>$_POST['date'],'postID'=>$_POST['postID']);
+        $result = $this->commentObject->addComment($commentdata);
+        $this->set('message', $result);
     }
 
     public function save() {
@@ -22,6 +28,5 @@ class commentsController extends Controller{
 
         $this->set('message', $result);
     }
-
-
 }
+
