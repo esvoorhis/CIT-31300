@@ -15,19 +15,16 @@ if( is_array($post) ) {
         </sub>
     </div>
 
-<?php include('controllers/commentscontroller.php')?>;
-<div class="container">
     <?php echo '</br>'?>
     <div style="border: 2px solid #aa03a8">
         <h2>Comments</h2>
         <?php if (is_array($comment)) {
             extract($comment);
         } ?>
-
         <p><?php echo $commentText ?></p>
 
         <?php if ($u->isRegistered()) { ?>
-            <form class="" action="<?php echo BASE_URL?>controllers/managecommentscontroller<?php echo $task ?>" method="post">
+            <form class="" action="<?php echo BASE_URL?>managecomments/<?php echo $task ?>" method="post">
                 <input id="commentText" class="" name="commentText" type="text">
                 <button id="submit" type="submit" class="btn btn-primary">Submit</button>
             </form>
