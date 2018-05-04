@@ -19,8 +19,19 @@ class ManagePostsController extends Controller{
 	public function save(){
 		$this->postObject = new Post();
 		$data = array('title'=>$_POST['title'],'content'=>$_POST['content'],'category'=>$_POST['category'],'date'=>$_POST['date']);
+
+        // Loop over field names, make sure none are empty
+        $error = false;
+        foreach($data as $field) {
+            if (empty($_POST[$field])) {
+                $error = true;
+            }
+        }
+        if ($error) {
+            echo "All fields are required.";
+        } else exit();
+
 		//$this->getCategories();
-			
 		$result = $this->postObject->addPost($data);
 		$this->set('message', $result);
 	}

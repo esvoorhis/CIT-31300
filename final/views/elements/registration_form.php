@@ -17,10 +17,37 @@
 <label for="password">Password: <?=REQFIELD?></label>
 <input type="password" class="txt" id="password" name="password" value="<?php echo $password;?>" maxlength="100" required="password" />
 
+    <label for="reenter">Re-enter Password: <?=REQFIELD?></label>
+    <input type="password" class="txt" id="reenter" name="reenter" value="<?php echo $reenter;?>" maxlength="100" required="reenter" />
+
 <br />
 
 <input type="hidden" name="uID" value="<?php echo $uID ?>"/>
  
 <button id="submit" type="submit" class="btn btn-primary" >Sign Up</button>
 </fieldset>
+<?php
+// check form
+$required = array('first_name', 'last_name', 'email', 'password', 'reenter');
+
+// Loop over field names, make sure none are empty
+$error = false;
+foreach($required as $field) {
+  if (empty($_POST[$field])) {
+    $error = true;
+  }
+}
+if ($error) {
+  echo "All fields are required.";
+} else exit();
+
+if ($_POST["password"] !== $_POST["reenter"]) {
+    // failed
+    echo "Passwords do not match";
+
+}
+else exit();
+
+?>
+
 </form>

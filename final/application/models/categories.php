@@ -27,6 +27,18 @@ class Categories extends Model{
 		return $outcome;
 		
 		}
+    public function getCatPosts($categoryID){
+
+        $sql = 'select * from posts where categoryID = ?';
+
+        $results = $this->db->execute($sql, $categoryID);
+
+        while ($row=$results->fetchrow()) {
+            $posts[] = $row;
+        }
+
+        return $posts;
+    }
 
 	public function update($cID,$name){
 		$categoryID = $this->db->qstr($cID);

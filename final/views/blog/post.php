@@ -1,5 +1,6 @@
 <html>
 <?php include('views/elements/header.php');?>
+
 <?php
 if( is_array($post) ) {
     extract($post);
@@ -11,7 +12,7 @@ if( is_array($post) ) {
             <h1><?php echo $title;?></h1>
         </div>
         <p><?php echo $content;?></p>
-        <sub><?php echo 'Posted on ' . $date . ' by <a href="'.BASE_URL.'members/view/'. $uid.'">'. $first_name . ' ' . $last_name . '</a> in <a href="'.BASE_URL.'category/view/'. $categoryid.'">' . $name .'</a><br>'?>
+        <sub><?php echo 'Posted on ' . $date . ' by <a href="'.BASE_URL.'members/view/'. $uid.'">'. $first_name . ' ' . $last_name . '</a> in <a href="'.BASE_URL.'categories/'. $categoryid.'">' . $name .'</a><br>'?>
         </sub>
     </div>
 
