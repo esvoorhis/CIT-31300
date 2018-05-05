@@ -14,8 +14,6 @@ class Controller {
         //check the user object
         $u = new Users();
 
-
-
         //check access to the page
 
         if($this->access == 1 && !$u->isAdmin()) {
@@ -39,9 +37,6 @@ class Controller {
                 $this->view->load($view,'index',$this->data);
             }
         }
-
-
-
 	}
 	
 	/*
